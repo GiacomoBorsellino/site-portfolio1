@@ -1,1 +1,0 @@
-Questo è un progetto, creato durante il percorso di Start2impact, utile a sedimentare le competenze sull'uso di html, css (principalmente) e javascript.
