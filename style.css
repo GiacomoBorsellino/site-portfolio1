@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: proxima;
+  src: url(font/ProximaNova-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: vcr;
+  src: url(font/vcr.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url(images/back4.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+
+  font-family: proxima;
+  font-weight: 300;
+
+  text-shadow: 2px 2px #202020;
+
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a:link {
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: vcr;
+  text-shadow: 2px 2px #202020;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+  padding-top: 80px;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {padding-top: 40px; opacity: 0;}
+  100% {padding-top: 80px; opacity: 1;}
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+  animation: move2 3s;
+}
+
+@keyframes move2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.collegamenti {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cont a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+
+}
+
+.collegamenti a img {
+  width: 13%;
+  animation: move3 4s;
+  filter: drop-shadow(2px 2px #202020);
+}
+
+@keyframes move3 {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.collegamenti a img:hover {
+  width: 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: proxima;
+  color: white;
+  font-size: 10px;
+}
+
+footer p {
+  position: absolute;
+  bottom: 20px;
+}
+
+/* Inizio Media Queries*/
+@media only screen and (max-width: 321px) {
+h1 {
+  font-size: 25px;
+  padding-top: 20px;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {padding-top: 0px; opacity: 0;}
+  100% {padding-top: 20px; opacity: 1;}
+}
+}
+@media only screen and (min-width: 322px) and (max-width: 376px) {
+  h1 {
+    font-size: 45px;
+    font-weight: 800;
+    padding-top: 50px;
+    animation: move 2s;
+  }
+  
+  @keyframes move {
+    0% {padding-top: 25px; opacity: 0;}
+    100% {padding-top: 50px; opacity: 1;}
+  }
+  
+  h2 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+    animation: move2 3s;
+  }
+  
+  @keyframes move2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .collegamenti {
+    padding-top: 5px;
+  }
+  .collegamenti a img {
+    width: 13%;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+h1 {
+  padding-top: 200px;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {padding-top: 160px; opacity: 0;}
+  100% {padding-top: 200px; opacity: 1;}
+}
+
+}
+
+@media only screen and (min-width: 1365px) {
+h1 {
+  padding-top: 130px;
+  font-size: 55px;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {padding-top: 90px; opacity: 0;}
+  100% {padding-top: 130px; opacity: 1;}
+}
+
+h2 {
+  font-size: 30px;
+  animation: move2 3s;
+}
+
+@keyframes move2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.collegamenti {
+  display: flex;
+  padding-top: 30px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cont a {
+  padding: 0%;
+}
+
+.collegamenti a img {
+  width: 9%;
+}
+
+}
+
+@media only screen and (min-width: 1600px) {
+h1 {
+  padding-top: 300px;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {padding-top: 260px; opacity: 0;}
+  100% {padding-top: 300px; opacity: 1;}
+}
+
+.cont a {
+  padding: 0%;
+}
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

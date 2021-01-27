@@ -1,0 +1,327 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+font-family: proxima;
+src: url(../font/ProximaNova-Regular.otf);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: proximalight;
+    src: url(../font/Proxima\ Nova\ Thin.otf);
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+font-family: vcr;
+src: url(../font/vcr.ttf);
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+background: url(../images/back4.gif) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+text-shadow: 2px 2px #202020;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 15px;
+
+font-family: proxima;
+font-weight: 300;
+
+text-shadow: 2px 2px #202020;
+
+}
+
+nav ul li {
+padding: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+nav ul li a:visited {
+color: white;
+}
+
+nav ul li a:link {
+color: white;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+footer {
+display: flex;
+justify-content: center;
+font-family: proxima;
+color: white;
+font-size: 10px;
+position: relative;
+padding-top: 50px;
+}
+
+footer p {
+position: absolute;
+bottom: 20px;
+}
+
+/* Inizio stile particolare */
+
+.tab {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #1d1d1d;
+    border-radius: 3px;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    z-index: 1;
+
+    animation: opac 500ms;
+}
+@keyframes opac {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.tab2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #1d1d1d;
+    align-items: center;
+    padding-top: 20px;
+    height: 500px;
+}
+
+div iframe {
+    display: flex;
+    width: 250px;
+    justify-self: center;
+}
+
+.tab p {
+    padding: 20px;    
+    padding-bottom: 10px;
+    font-family: proximalight;
+    line-height: 27px;
+}
+
+.x {
+    font-family: proxima;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    color: white;
+    justify-content: center;
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cont2 {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    animation: move 1s;
+}
+@keyframes move {
+    0% {padding: 0px;}
+    100% {padding: 20px;}
+}
+
+.cont2 img {
+    width: 270px;
+    border-radius: 3%;
+}
+
+
+
+div h1 {
+    font-family: vcr;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div h2 {
+    font-family: proximalight;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.up a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.up img {
+    width: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Media Query */
+@media only screen and (min-width: 767px) {
+.up img {
+    width: 10%;
+}
+.tab {
+    width: 500px;
+    height: 600px;
+}
+div iframe {
+    width: 300px;
+    height: 200px;
+    padding-top: 30px;
+}
+
+.tab p {
+    padding: 60px;    
+    line-height: 30px;
+}
+}
+@media only screen and (min-width: 1024px) {
+.tab {
+    width: 700px;
+    height: 900px;
+}
+div iframe {
+    width: 500px;
+    height: 400px;
+    padding-top: 40px;
+}
+
+.tab p {
+    padding: 80px;    
+    padding-left: 100px ;
+    padding-right: 100px;
+    padding-bottom: 190px;
+    line-height: 50px;
+}  
+.cont2 img {
+    width: 350px;
+    border-radius: 3%;
+}
+}
+
+@media only screen and (min-width: 1365px) and (max-width: 1919px) {
+.up img {
+    width: 5%;
+}
+.tab {
+    width: 700px;
+    height: 530px;
+}
+div iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.tab p {
+    padding: 80px;    
+    padding-top: 60px;
+    padding-bottom: 5px;
+    line-height: 30px;
+}
+
+.cont2:hover {
+    filter: brightness(80%);
+}
+}
+@media only screen and (min-width: 1920px) {
+.cont2 {
+    padding: 50px;
+}
+
+.up img {
+    display: none;
+}
+
+.tab {
+    width: 900px;
+    height: 600px;
+    margin-top: 90px;
+    padding-top: 20px;
+}
+
+div iframe {
+    width: 500px;
+    height: 500px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.tab p {
+    padding: 80px;    
+    padding-top: 60px;
+    padding-bottom: 5px;
+    line-height: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+} 
+
+.cont2:hover {
+    filter: brightness(80%);
+}
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,0 +1,189 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+font-family: proxima;
+src: url(../font/ProximaNova-Regular.otf);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: vcr;
+src: url(../font/vcr.ttf);
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+background: url(../images/back4.gif) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 15px;
+
+font-family: proxima;
+font-weight: 300;
+
+text-shadow: 2px 2px #202020;
+
+}
+
+nav ul li {
+padding: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+nav ul li a:visited {
+color: white;
+}
+
+nav ul li a:link {
+color: white;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+footer {
+display: flex;
+justify-content: center;
+font-family: proxima;
+color: white;
+font-size: 10px;
+padding-top: 10px;
+}
+
+footer p {
+position: relative;
+padding-top: 10px;
+bottom: 20px;
+}
+
+/* Inizio regole particolari */
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 5px;
+resize: vertical;
+font-family: proxima;
+}
+
+.imgus {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.container a img {
+    width: 30px;
+}
+
+input[type=submit] {
+background-color: #252525;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #252525;
+}
+
+.container {
+border-radius: 5px;
+background-color: #1d1d1d;
+padding: 20px;
+font-family: proxima;
+margin: 30px;
+margin-top: 10px;
+color: white;
+opacity: 0.9;
+}
+
+.container p {
+    padding-bottom: 20px;
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+.container {
+    margin: 80px;
+    margin-bottom: 270px;
+}
+}
+@media only screen and (min-width: 1024px) {
+.container {
+    margin: 80px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    padding-bottom: 100px;
+} 
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+.container {
+  margin: 100px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+footer p {
+  bottom: 10px;
+  padding-top: 0px;
+}
+}
+@media only screen and (min-width: 1920px) {
+.container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,0 +1,275 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+font-family: proxima;
+src: url(../font/ProximaNova-Regular.otf);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-light;
+    src: url(../font/Proxima\ Nova\ Alt\ Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: vcr;
+src: url(../font/vcr.ttf);
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+background: url(../images/back4.gif) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+text-shadow: 2px 2px #202020;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 15px;
+
+font-family: proxima;
+font-weight: 300;
+
+text-shadow: 2px 2px #202020;
+
+}
+
+nav ul li {
+padding: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+nav ul li a:visited {
+color: white;
+}
+
+nav ul li a:link {
+color: white;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+footer {
+display: flex;
+justify-content: center;
+font-family: proxima;
+color: white;
+font-size: 10px;
+}
+
+footer p {
+position: absolute;
+bottom: 20px;
+}
+
+footer p {
+text-align: center;
+}
+
+/* Inizio elementi pagina unici */
+.containerSkill {
+    color: white;
+    display: flex;
+}
+ 
+.containerSkill h1 {
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+    font-family: vcr;
+    font-size: 50px;
+
+    animation: move2 1s;
+}
+
+@keyframes move2 {
+    0% {opacity: 0; padding-top: 0px;}
+    100% {opacity: 1; padding-top: 10px;}
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    list-style: none;
+    text-shadow: 2px 2px #202020;
+
+}
+
+.skill li {
+    padding: 10px;
+
+    margin-bottom: 10px;
+    margin-left: 30px;
+
+/*  test background  
+    background-image: url(../images/brush.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+*/    
+    font-family: proxima-light;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    animation: move 1.5s;
+}
+
+@keyframes move {
+    0% {opacity: 0; padding-bottom: 30px;}
+    100% {opacity: 1; padding-bottom: 10px;}
+}
+
+ul img {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+.containerSkill h1 {
+    font-size: 80px;
+}
+
+.skill li {
+    padding: 30px;
+
+    margin-bottom: 0px;
+    margin-left: 30px;
+
+    font-size: 25px;
+    line-height: 60px;
+    animation: move 2s;
+    border-bottom: 1px solid white;
+}
+
+@keyframes move {
+    0% {opacity: 0; padding-bottom: 70px;}
+    100% {opacity: 1; padding-bottom: 30px;}
+}
+
+/* immagini sparti testi
+ul img {
+    display: flex;
+    width: 40px;
+    align-self: center;
+}
+*/
+}
+
+@media only screen and (min-width: 1365px) and (max-width: 1919px) {
+.containerSkill h1 {
+    padding-left: 170px;
+    padding-right: 20px;
+    padding-top: 40px;
+
+    animation: move2 2s;
+    font-size: 60px;
+}
+
+@keyframes move2 {
+    0% {opacity: 0; padding-top: 10px;}
+    100% {opacity: 1; padding-top: 40px;}
+}
+
+.skill li {
+    padding: 20px;
+    padding-top: 40px;
+
+    margin-bottom: 0px;
+    margin-left: 170px;
+    margin-right: 0px;
+
+    font-size: 20px;
+    line-height: 55px;
+    animation: move 2s;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+@keyframes move {
+    0% {opacity: 0; padding-top: 60px;}
+    100% {opacity: 1; padding-top: 40px;}
+}
+}
+
+@media only screen and (min-width: 1920px) {
+.containerSkill h1 {
+    padding-left: 400px;
+    padding-right: 60px;
+    padding-top: 70px;
+    margin-left: 0px;
+    font-size: 90px;
+    animation: move5 1s;
+}
+@keyframes move5 {
+    0% {opacity: 0; padding-top: 10px;}
+    100% {opacity: 1; padding-top: 70px}
+}
+
+.skill {
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-right: 0px;
+}
+.skill li {
+    padding: 20px;
+    padding-top: 70px;
+
+    font-size: 30px;
+    line-height: 55px;
+    animation: move 2s;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+@keyframes move {
+    0% {opacity: 0; padding-top: 110px;}
+    100% {opacity: 1; padding-top: 70px;}
+}
+
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
