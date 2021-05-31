@@ -5,7 +5,6 @@
   </p>
   <p>
     <img src="https://github.com/GiacomoBorsellino/my-site/images/immagine.png" alt="Logo" width="400">
-
   </p>
 </p>
 
