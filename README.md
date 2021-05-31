@@ -4,7 +4,7 @@
     Progetto che consiste in un sito/portfolio modello che ha lo scopo di presentare un profilo personale.
   </p>
   <p>
-    <img src="https://github.com/GiacomoBorsellino/my-site/images/immagine.png" alt="Logo" width="400">
+    <img src="https://raw.githubusercontent.com/GiacomoBorsellino/my-site/main/images/Immagine.png" alt="Logo" width="400">
   </p>
 </p>
 
