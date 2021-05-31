@@ -30,6 +30,7 @@ Il progetto consiste nella creazione di un sito, esclusivamente lato front-end, 
 La struttura è modulare, presenta dei templates riutilizzabili, atti a ricreare nuove pagine ed inserire ulteriori sezioni.
 Le pagine sono responsive, in modo tale da rendere il sito visibile agilmente su vari devices.
 Graficamente ho dato un tono particolarmente "inusuale", tale da distinguere l'eventuale profilo da altri e renderlo più di impatto.
+
 N.b. La sezione "Portfolio" è volontariamente vuota. 
 Vista l'aggiunta continua di progetti, ho preferito inserire soltanto dei placeholder indicativi.
 I dati inseriti sono soggetti a cambiamento e potrebbero risultare non aggiornati.
