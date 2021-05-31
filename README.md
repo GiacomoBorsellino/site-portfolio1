@@ -3,8 +3,8 @@
   <p align="center">
     Progetto che consiste in un sito/portfolio modello che ha lo scopo di presentare un profilo personale.
   </p>
-  <p>
-    <img src="https://raw.githubusercontent.com/GiacomoBorsellino/my-site/main/images/Immagine.png" alt="Logo" width="400">
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/GiacomoBorsellino/my-site/main/images/Immagine.png" alt="Logo" width="80%">
   </p>
 </p>
 
